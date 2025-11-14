@@ -24,7 +24,9 @@ To view the available option tags:
 Example usage:
 
 `julia -t 20 sphere_FQHE_widebump_onlynorth_parallel.jl -e 6 -o 16 -n 15 -i v1.txt -p --method Krylov`
+
 `julia -t 20 sphere_FQHE_widebump_samesign_parallel.jl -e 6 -o 16 -n 15 -i v1.txt -p --method Krylov`
+
 `julia -t 20 sphere_FQHE_widebump_4pins_parallel.jl -e 6 -o 16 -n 15 -i v1.txt -p --method Krylov`
 
 ## Output and Plotting
@@ -42,4 +44,5 @@ Some plotting scripts are included to visualize the results
 
 
 For the Python scripts, run `python3 <filename>.py -h` to check the available options.
+
 
