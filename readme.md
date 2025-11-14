@@ -4,6 +4,7 @@
 The routines in this directory perform exact diagonalization (ED) on the many-body Hilbert space in the lowest Landau level (LLL) on the sphere for the Hamiltonian of the form
 
 $$H = V_1 + \lambda V_{\text{pins}}$$
+
 where $$V_1$$ is the two-body Haldane pseudo potential and $$V_{\text{pins}}$$ varies depending on the version of the script. $$\lambda$$ is a tuneable parameter, and ED is carried out concurrently (in embarrassingly parallel processes) for different values of $$\lambda$$ within the specified range. 
 
 The current available scripts are:
@@ -35,5 +36,6 @@ Some plotting scripts are included to visualize the results
 * `plot_density_sphere.jl` -- Plot the density of the state on the sphere. Use by `julia plot_density_sphere.jl -f <filename>`
 * `plot_gap_wide_pins.py` -- Plot the gap as a function of $$\lambda$$ 
 * `plot_gap_4pins.py` -- Plot the gap as a function of $$\lambda$$, used specifically for the four-pin setup.
+
 
 For the Python scripts, run `python3 <filename>.py -h` to check the available options.
