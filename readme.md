@@ -17,6 +17,12 @@ In every version and with the default setting, each pin is attracts electrons wi
 Since the Hilbert space is the LLL, the Hamiltonian matrix is sparse. The default ED method is the Arnoldi method (a.k.a. implicitly restarted Lanczos). There is an option to use the method provided by KrylovKit.jl, which is recommend as it often seems slightly faster than ARPACK. This can be done by the tag `--method Krylov` (note that "Krylov" is case-sensitive). ARPACK is left as the default method because of legacy reasons.
 
 ## Command
+These routines requires the [QHE_Julia](https://github.com/hq-tr/QHE_Julia) library. To run the code properly you have to modify all the lines the preamble of the script:
+
+`include("/home/trung/_qhe-julia/<something>.jl")`
+
+to change `/home/trung/_qhe-julia` into the path to wherever the QHE_Julia library is stored on your machine.
+
 To view the available option tags:
 
 `julia sphere_FQHE_widebump_onlynorth_parallel.jl -h`
@@ -44,5 +50,6 @@ Some plotting scripts are included to visualize the results
 
 
 For the Python scripts, run `python3 <filename>.py -h` to check the available options.
+
 
 
