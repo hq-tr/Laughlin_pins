@@ -3,9 +3,9 @@
 ## Description
 The routines in this directory perform exact diagonalization (ED) on the many-body Hilbert space in the lowest Landau level (LLL) on the sphere for the Hamiltonian of the form
 
-$$H = V_1 + \lambda V_{\text{pins}}$$
+$$H = V^{2bdy} + \lambda V_{\text{pins}}$$
 
-where $$V_1$$ is the two-body Haldane pseudo potential and $$V_{\text{pins}}$$ varies depending on the version of the script. $$\lambda$$ is a tuneable parameter, and ED is carried out concurrently (in embarrassingly parallel processes) for different values of $$\lambda$$ within the specified range. 
+where $$V^{2bdy}$$ is any combination of two-body Haldane pseudo potentials and $$V_{\text{pins}}$$ varies depending on the version of the script. $$\lambda$$ is a tuneable parameter, and ED is carried out concurrently (in embarrassingly parallel processes) for different values of $$\lambda$$ within the specified range. 
 
 The current available scripts are:
 * `sphere_FQHE_widebump_onlynorth_parallel.jl` -- Only one pin at the north pole. 
