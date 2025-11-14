@@ -18,9 +18,11 @@ Since the Hilbert space is the LLL, the Hamiltonian matrix is sparse. The defaul
 
 ## Command
 To view the available option tags:
+
 `julia sphere_FQHE_widebump_onlynorth_parallel.jl -h`
 
 Example usage:
+
 `julia -t 20 sphere_FQHE_widebump_onlynorth_parallel.jl -e 6 -o 16 -n 15 -i v1.txt -p --method Krylov`
 `julia -t 20 sphere_FQHE_widebump_samesign_parallel.jl -e 6 -o 16 -n 15 -i v1.txt -p --method Krylov`
 `julia -t 20 sphere_FQHE_widebump_4pins_parallel.jl -e 6 -o 16 -n 15 -i v1.txt -p --method Krylov`
@@ -33,9 +35,11 @@ Each of the subdirectories contains further sub-subdirectories, each containing 
 * All the eigenstates up to the number of converged eigen pairs provided by the solver. The names of these files start with `g` and they have no extension, but they are just plain text files.
 
 Some plotting scripts are included to visualize the results
+
 * `plot_density_sphere.jl` -- Plot the density of the state on the sphere. Use by `julia plot_density_sphere.jl -f <filename>`
 * `plot_gap_wide_pins.py` -- Plot the gap as a function of $$\lambda$$ 
 * `plot_gap_4pins.py` -- Plot the gap as a function of $$\lambda$$, used specifically for the four-pin setup.
 
 
 For the Python scripts, run `python3 <filename>.py -h` to check the available options.
+
