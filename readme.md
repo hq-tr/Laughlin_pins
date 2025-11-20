@@ -12,7 +12,7 @@ The current available scripts are:
 * `sphere_FQHE_widebump_samesign_parallel.jl` -- Two pins, one at the north pole and one at the south pole. The two pins are identical (same sign and same magnitude)
 * `sphere_FQHE_widebump_4pins_parallel.jl` -- Four pins arranged at the vertices of a regular tetrahedron, with one pin at the north pole. All four pins are identical.
 
-In every version and with the default setting, each pin is attracts electrons within $k$ LLL orbital around it. $k$ is a tuneable parameter. They can also be made into positive pins, which repel electrons (attract holes or quasiholes) by adding the `--postive` flag.
+In every version and with the default setting, each pin attracts electrons within $k$ LLL orbital around it. $k$ is a tuneable parameter. They can also be made into positive pins, which repel electrons (attract holes or quasiholes) by adding the `--postive` flag.
 
 Since the Hilbert space is the LLL, the Hamiltonian matrix is sparse. The default ED method is the Arnoldi method (a.k.a. implicitly restarted Lanczos). There is an option to use the method provided by KrylovKit.jl, which is recommend as it often seems slightly faster than ARPACK. This can be done by the tag `--method Krylov` (note that "Krylov" is case-sensitive). ARPACK is left as the default method because of legacy reasons.
 
@@ -50,6 +50,7 @@ Some plotting scripts are included to visualize the results
 
 
 For the Python scripts, run `python3 <filename>.py -h` to check the available options.
+
 
 
 
